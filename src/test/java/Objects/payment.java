@@ -14,7 +14,7 @@ public class payment {
         this.driver = driver;
     }
     public void bookTrip(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(90));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement checkTerms = wait.until(ExpectedConditions.elementToBeClickable(By.id("termsChk")));
 
 

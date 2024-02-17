@@ -15,7 +15,7 @@ public class customerDetails {
         WebElement firstFlight = flight.get(1);
         firstFlight.click();
         List<WebElement> seat = driver.findElements(By.xpath("//li  [@class=\"availSeatClassS\"]")); //select an available seat
-        WebElement firstSeat = seat.getFirst();
+        WebElement firstSeat = seat.get(0);
         firstSeat.click();
     }
 
